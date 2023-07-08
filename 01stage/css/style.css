@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+
+}
+
+header nav{
+    position: fixed;
+    left: 0;
+    top: 0; 
+    width: 100%;
+    background: linear-gradient(135deg,blue 10%,#2afadf 50%);
+    z-index: 2000;    
+}
+
+nav .navbar{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto 20px auto ;
+
+}
+.navbar .logo{
+    height: 80px;
+    width: 90px;
+}
+
+.navbar .logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.navbar .menu{
+    display: flex;
+}
+
+.navbar .menu li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+.menu li a{
+    font-size: 20px;
+    color: blue;
+    font-weight: 900;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: azure;
+}
+
+.navbar .search-box{
+    position: relative;
+    height: 50px;
+    width: 250px;
+}
+.search-box input[type="text"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: blue;
+    font-size: 20px;
+    outline: none;
+    border: 2px solide aqua;
+    border-radius: 8px;
+
+}
+
+.search-box a{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 29px;
+    color: aqua;
+    padding: 0 5px 0 0;
+    border-right: 2px solid aqua;
+}
+
+.content{
+    position: absolute;
+    top:33%;
+    left: 7%;
+}
+
+.content .text{
+    font-size: 33px;
+    color:#2c3e50;
+}
+.content .name{
+    font-size: 75px;
+    color: aqua;
+    margin: -20px 0 0 -3px;
+}
+
+.content .job{
+    font-size: 38px;
+    color: #2c3e50;
+    display: flex;
+}
+
+.content .job .typing-text{
+    color:#1de2d1;
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #1de2d1;
+    animation: typing 10s steps(50) infinite;
+}
+@keyframes typing{
+    0%{
+        width: 0ch;
+    }
+    25%{
+        width: 15ch;
+    }
+    50%{
+        width: 27ch;
+    }
+    75%{
+        width: 15ch;
+    }
+    100%{
+        width: 0ch;
+    }
+}
+
+.content .buttons{
+    margin: 20px 0 0  50px;
+}
+.content .buttons  button{
+    color: #fff;
+    margin: 0 10px;
+    padding: 8px 16px;
+    font-size: 18px;
+    cursor:pointer;
+    border-radius: 6px;
+    background: linear-gradient(135deg,#2afadf 10%,blue 100%);
+    transition: all 0.3s ease;  
+}
+
+.content .buttons  button:hover{
+    transform: scale(0.98);
+}
+
+header .boy img{
+    position: absolute;
+    right: -400px;
+    bottom: 0;
+    height: 157%;
+
+}
